@@ -1,21 +1,24 @@
 public class Node {
     private int value;
     private Node next = null;
+    
 
     public Node(int value){
-        // TODO
+        this.value = value;
     }
 
     public Node(int value, Node next){
-        // TODO
+        this.value = value;
+        this.next = next;
     }
 
     public void addValue(int value){
-        // TODO
+        this.value = value;
     }
 
+    // Ajouter le noeud donnée en argument à la liste chainée
     public void addNode(Node next){
-        // TODO
+        while
     }
 
     public void removeLast(){
@@ -47,5 +50,17 @@ public class Node {
 
     public void insertSort(){
         // TODO
+    }
+    
+    
+    
+    // Getters
+    
+    public int getValue(){
+        return this.value;
+    }
+    
+    public Node getNext(){
+        return this.next;
     }
 }
