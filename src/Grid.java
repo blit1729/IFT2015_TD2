@@ -64,7 +64,7 @@ public class Grid {
     public Grid(){
         
         // Create a random 12 cases grid of cells with the exact amount of
-        // each type of cell that we need (1, 5, 10, 25, X)
+        // each type of cell that we need (1, 5, 10, 25, X).
         
         int compt1 = 0;  // need 4
         int compt5 = 0;  // need 2
@@ -105,7 +105,7 @@ public class Grid {
             else{ i--; }
         }
         setNeighbours();
-    }
+    } // fin
     
     // Set the proper 4 neighbours of each cell of the grid
     public void setNeighbours(){
@@ -135,7 +135,7 @@ public class Grid {
                 this.grid[i].setLeft(this.grid[i-1]);
             }
             
-            // Set right
+            // Set right.
             if(i == 3 || i == 7 || i == 11){
                 this.grid[i].setRight(null);
             }
@@ -146,14 +146,14 @@ public class Grid {
         
     }
     
-    // Getter Grid class
+    // Getter Grid class.
     public Cell[] getGrid(){
         return this.grid;
     }
     
 
     // Verify if the given cell can be moved to the empty case of the grid. 
-    // If so, the move is done
+    // If so, the move is done.
     public boolean move(Cell box){
         System.out.println("Value of box:" + box.getValue());                       // test for debuging
         Cell cell; // Cell where we'll put the neighbour we are comparing
@@ -220,7 +220,7 @@ public class Grid {
         return false;
     }
 
-    // Return true if first row = last row (winning the game)
+    // Return true if first row = last row (winning the game).
     public boolean check_complete(){
         Cell[] grid = this.grid;
         
@@ -238,6 +238,6 @@ public class Grid {
     }
     
     public void solve_game(){
-        // TODO
+        // TODO...
     }
 }
