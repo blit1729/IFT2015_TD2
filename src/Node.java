@@ -25,8 +25,10 @@ public class Node {
     this.next = next;
   }
 
-  /*
+    /*
    * Pour ajouter un element a la fin de la liste
+   * 
+   * 
    */
 
   public void addValue(int value) {
@@ -36,13 +38,13 @@ public class Node {
       this.next = new Node(value);
     }
 
-    // sinon, on va aller d'un maniere recursive jusqu'au dernier node
+    // sinon, on va aller d'un maniere recursif jusqua le derniere node
     // pour ajouter un nouveau element dans un nouveau node
 
     else {
       this.next.addValue(value);
     }
-  }
+  } //fin
 
   /*
    * pour ajouter un nouveau node a la fin de la liste
@@ -109,19 +111,7 @@ public class Node {
     }
   }
 
-  /*
-   * public void removeValue(int value) {
-   * if (this.next == null) {
-   * return;
-   * }
-   * if (this.next.value == value) {
-   * this.next = this.next.next;
-   * } else {
-   * this.next.removeValue(value);
-   * }
-   * }
-   * 
-   */
+  
 
   // method iteratif pour trouver le longuer de la liste
 
@@ -203,6 +193,6 @@ public class Node {
       // on passe au prochain node
       nodeActual = prochainNode;
     }
-  }
+  }  // fin
 
 }
